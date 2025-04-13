@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   extract.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:36:45 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:36:47 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:22 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 char    *extract_texture(char *line, t_data *map)
 {

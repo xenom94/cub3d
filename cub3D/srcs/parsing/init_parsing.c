@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   init_parsing.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:37:36 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:37:38 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:37 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 char	*parse_file_map(char *file_path, t_data *data)
 {

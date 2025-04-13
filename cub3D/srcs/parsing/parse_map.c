@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parse_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:38:25 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:38:27 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:43 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 int  get_map_height(char *line)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   extract_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:36:58 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:37:00 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:18 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 int skip_spaces(char *line, int i)
 {

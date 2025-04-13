@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   rgb.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:38:34 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:38:36 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:45 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 char    *decimal_to_hexadecimal(int decimal)
 {

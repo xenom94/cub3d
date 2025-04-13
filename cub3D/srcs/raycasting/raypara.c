@@ -1,4 +1,4 @@
-#include   "../includes/cub3d.h"
+#include "../../includes/cub3d.h"
 
 void	calculate_wall_coordinate(t_data *data, int i)
 {

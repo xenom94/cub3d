@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parse_file_map.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:37:24 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:37:26 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:39 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 int     extract_map_data(int map_fd, char **line, t_data *data)
 {

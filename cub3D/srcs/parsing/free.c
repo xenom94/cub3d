@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:37:08 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:38:06 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:25 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../../includes/cub3d.h"
 
 int	free_map2d(t_map2D *map2d)
 {

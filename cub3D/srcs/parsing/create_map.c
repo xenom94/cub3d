@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   create_map.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:36:32 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:36:34 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 21:10:16 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
-size_t  get_map_height(char **map)
+size_t  get_map_height_1(char **map)
 {
         size_t  cur;
 
@@ -22,7 +22,7 @@ size_t  get_map_height(char **map)
         return (cur);
 }
 
-size_t  get_map_width(char **map)
+size_t  get_map_width_1(char **map)
 {
         if (map[0])
                 return (ft_strlen(map[0]));

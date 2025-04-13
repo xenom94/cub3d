@@ -6,13 +6,13 @@ int	has_wall_at(t_data *data, float x, float y)
 	int	x_index;
 	int	y_index;
 
-	if (x < 0 || x > data->map_w * TILE_SIZE
-		|| y < 0 || y > data->map_h * TILE_SIZE)
+	if (x < 0 || x > data->map2d->width * TILE_SIZE
+		|| y < 0 || y > data->map2d->height * TILE_SIZE)
 		return (1);
 	x_index = x / TILE_SIZE;
 	y_index = y / TILE_SIZE;
-	if (data->map[y_index] && data->map[y_index] + x_index)
-		if (ft_strncmp(data->map[y_index] + x_index, "1", 1))
+	if (data->map2d->map[y_index] && data->map2d->map[y_index] + x_index)
+		if (ft_strncmp(data->map2d->map[y_index] + x_index, "1", 1))
 			return (0);
 	return (1);
 }
@@ -52,7 +52,7 @@ void	draw_wall(t_data *data, int i, int j)
 	distance_from_top = j + (data->player.rays[i].wall_strip_height / 2) \
 	- (WIN_HEIGHT / 2);
 	data->player.rays[i].offset_y = distance_from_top * \
-	((double)data->textures.height / data->player.rays[i].wall_strip_height);
+	((double)data->texture_height / data->player.rays[i].wall_strip_height);
 	choice = choose_texture(&data->player.rays[i], \
 	data->player.rays[i].ray_angle);
 	color = get_texture_pixel_color(data->player.rays[i].offset_x \
@@ -75,7 +75,7 @@ void	rendring(t_data *data)
 			data->player.rays[i].wall_cordinate.bottom)
 				draw_wall(data, i, j);
 			else if (j < data->player.rays[i].wall_cordinate.bottom)
-				my_mlx_pixel_put(data->mlx, i, j, data->celling_color);
+				my_mlx_pixel_put(data->mlx, i, j, data->ceiling_color);
 			else
 				my_mlx_pixel_put(data->mlx, i, j, data->floor_color);
 			j++;

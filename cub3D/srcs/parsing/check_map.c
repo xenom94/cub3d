@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   check_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:36:21 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:36:23 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 21:06:59 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
-int     count_correct_sides(t_map2D *map2d, size_t x, size_t y)
+int     count_correct_sides(t_map2D *map2d, int x, int y)
 {
         int     correct_sides;
 

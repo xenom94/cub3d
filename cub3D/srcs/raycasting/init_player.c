@@ -18,5 +18,5 @@ void	initplayer(t_data *data)
 	data->player.walkdirection = 0;
 	data->player.straff_direction = 0;
 	data->player.movespeed = 4.5;
-	data->player.rotationspeed = 3.5 * (PI / 180);
+	data->player.rotationspeed = 3.5 * (M_PI / 180);
 }

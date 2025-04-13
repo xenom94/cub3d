@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   valid_map_content.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sisser <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: iabboudi <iabboudi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 08:38:56 by sisser            #+#    #+#             */
-/*   Updated: 2025/04/10 08:38:58 by sisser           ###   ########.fr       */
+/*   Updated: 2025/04/13 20:54:50 by iabboudi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parsing.h"
+#include "../../includes/cub3d.h"
 
 int     check_map_line(char *line)
 {

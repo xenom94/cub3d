@@ -1,24 +1,34 @@
 NAME		=	cub3d
-CC			=	cc 
+CC			=	cc
 CFLAGS		=	-Imlx_linux -Werror -Wextra -Wall
 RM			=	rm -rf
-SRCS		=	
-OBJS		= ${SRCS:.c=.o}
+SRCS		=	srcs/initialization/init_data.c srcs/parsing/check_map.c srcs/parsing/create_map.c srcs/parsing/extract_utils.c \
+				srcs/parsing/extract.c srcs/parsing/free.c srcs/parsing/init_parsing.c \
+				srcs/parsing/parse_file_map.c srcs/parsing/parse_map.c srcs/parsing/rgb.c srcs/parsing/utils.c \
+				srcs/parsing/valid_map_content.c srcs/raycasting/2dmap.c srcs/raycasting/cast_all_rays.c \
+				srcs/raycasting/events_handler.c srcs/raycasting/init_player.c srcs/raycasting/mlx_utils.c srcs/raycasting/raycasting.c \
+				srcs/raycasting/raypara.c
+OBJS		=	$(SRCS:.c=.o)
 
-all			:	$(NAME)
+LIBFT		=	libft/libft.a
 
-$(NAME)	: $(SRCS)
-		make -C libft
-		$(CC) $(CFLAGS) $(SRCS) -lmlx -framework OpenGL -framework AppKit libft/libft.a -o $(NAME) 
-			
-clean		:
-			$(RM) $(OBJS)
-			make clean -C libft
+all: $(NAME)
 
-fclean		: clean
-			$(RM) $(NAME)
-			make fclean -C libft
+$(NAME): $(OBJS)
+	@make -C libft
+	$(CC) $(CFLAGS) $(OBJS) -lmlx -lX11 -lXext -lm -lz $(LIBFT) -o $(NAME)
 
-re			: fclean all
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) $(OBJS)
+	@make clean -C libft
+
+fclean: clean
+	$(RM) $(NAME)
+	@make fclean -C libft
+
+re: fclean all
 
 .PHONY: all clean fclean re
